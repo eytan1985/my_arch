@@ -65,6 +65,8 @@ mount /dev/nvme0n1p1 /mnt/boot
 
 # Change pacman mirror priority, move closer mirror to the top
 vi /etc/pacman.d/mirrorlist
+# add multilib to pacman packages - uncomment [multilib] and his include
+vi /etc/pacman.conf
 # Install the base system plus a few packages
 pacstrap /mnt base base-devel sudo
 
