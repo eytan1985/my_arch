@@ -66,7 +66,7 @@ mount /dev/nvme0n1p1 /mnt/boot
 # Change pacman mirror priority, move closer mirror to the top
 vi /etc/pacman.d/mirrorlist
 # Install the base system plus a few packages
-pacstrap /mnt base sudo
+pacstrap /mnt base base-devel sudo
 
 # Generate fstab
 genfstab -L /mnt >> /mnt/etc/fstab
